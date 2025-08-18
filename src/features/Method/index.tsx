@@ -1,19 +1,24 @@
 import Image from "next/image"
 import { Methodes } from "./Data-Method"
+import { CheckCircle } from "lucide-react"
 
 export default function Method() {
   return (
-    <div className="relative w-full flex items-center bg-center bg-no-repeat bg-cover bg-[url(/images/method-cover.png)] justify-center min-h-[600px]">
+    <section id="method" className="relative w-full flex items-center bg-center bg-no-repeat bg-cover bg-[url(/images/method-cover.png)] justify-center min-h-[600px]">
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-transparent"></div>
 
       <div className="relative z-10 max-w-[1228px] grid grid-cols-1 lg:grid-cols-2 gap-12 w-full p-8">
         <div className="flex flex-col items-start justify-center space-y-6">
-          <div className="inline-block">
+          {/* <div className="inline-block">
             <span className="text-actif font-clashdisplay text-sm font-semibold tracking-wider uppercase mb-2 block">
               Notre Méthode
             </span>
             <div className="w-16 h-1 bg-gradient-to-r from-actif to-orange-400 rounded-full"></div>
+          </div> */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full border border-orange-500/30 mb-6">
+            <CheckCircle className="w-5 h-5 text-orange-400" />
+            <span className="text-orange-300 font-medium">Notre Méthode</span>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-clashdisplay font-bold text-white leading-tight">
@@ -23,9 +28,10 @@ export default function Method() {
           </h2>
 
           <p className="text-lg text-gray-200 font-DM_Sans leading-relaxed max-w-lg">
-            Située à Lomé, JAXE TECH accompagne les entreprises togolaises et africaines dans leur transformation
-            digitale. Nous allions expertise technique, design et stratégie marketing pour que chaque site ou
-            application devienne un levier de croissance.
+            Chaque projet commence par l’écoute et la compréhension de vos objectifs.
+            Nous analysons vos besoins pour concevoir des solutions digitales
+            sur mesure, alliant innovation, performance et simplicité d’utilisation,
+            afin de garantir des résultats concrets et durables.
           </p>
 
           {/* <button className="mt-4 px-8 py-3 bg-gradient-to-r from-actif to-orange-500 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-actif/25 transition-all duration-300 transform hover:scale-105">
@@ -63,6 +69,6 @@ export default function Method() {
 
       <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-br from-actif/20 to-orange-400/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 left-20 w-24 h-24 bg-gradient-to-br from-orange-400/20 to-actif/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
-    </div>
+    </section>
   )
 }

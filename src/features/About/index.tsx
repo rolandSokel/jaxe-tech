@@ -1,8 +1,9 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function About() {
   return (
-    <div className="w-full flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20">
+    <section id="about" className="w-full flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20">
       <div className="max-w-[1228px] grid grid-cols-1 lg:grid-cols-2 gap-16 w-full p-8">
         {/* Image Section */}
         <div className="flex justify-center lg:justify-end items-center order-2 lg:order-1">
@@ -68,12 +69,14 @@ export default function About() {
           {/* CTA Button */}
           <div className="pt-4">
             <button className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-clashdisplay font-semibold rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/25 hover:scale-105">
-              <span className="relative z-10">Découvrir nos Services</span>
+              <Link
+                href="#services"
+                className="relative z-10">Découvrir nos Services</Link>
               <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

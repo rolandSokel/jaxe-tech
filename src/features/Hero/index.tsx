@@ -1,6 +1,10 @@
+
+import Link from "next/link";
+
 export default function Hero() {
+
     return (
-        <main className="relative flex min-h-screen w-full bg-center bg-no-repeat bg-cover bg-[url(/images/hero/hero-bg-cover.png)] flex-col gap-8 items-center justify-center overflow-hidden">
+        <section id="hero" className="relative flex min-h-screen w-full bg-center bg-no-repeat bg-cover bg-[url(/images/hero/hero-bg-cover.png)] flex-col gap-8 items-center justify-center overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-transparent"></div>
 
             <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-full blur-xl animate-pulse" />
@@ -31,7 +35,9 @@ export default function Hero() {
                 <div className="flex gap-6 items-center flex-col sm:flex-row mt-8">
                     <button className="group relative bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <span className="relative z-10 flex items-center gap-2">
+                        <Link
+                        href="#contact"
+                        className="relative z-10 flex items-center gap-2">
                             Contactez-nous
                             <svg
                                 className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
@@ -41,7 +47,7 @@ export default function Hero() {
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
-                        </span>
+                        </Link>
                     </button>
 
                     <button className="group bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-2xl font-semibold text-lg border border-white/20 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl">
@@ -70,6 +76,6 @@ export default function Hero() {
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div> */}
-        </main>
+        </section>
     )
 }

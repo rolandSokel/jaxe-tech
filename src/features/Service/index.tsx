@@ -3,7 +3,7 @@ import { Services } from "./Data-Service"
 
 export default function Service() {
   return (
-    <div className="w-full bg-center bg-no-repeat bg-cover bg-[url(/images/method-cover.png)] flex items-center justify-center py-20">
+    <section id="services" className="w-full scroll-mt-[30px] bg-center bg-no-repeat bg-cover bg-[url(/images/method-cover.png)] flex items-center justify-center py-20">
       <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center mb-16 text-center">
           <div className="inline-block px-4 py-2 bg-orange-500/20 rounded-full mb-4">
@@ -26,6 +26,6 @@ export default function Service() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
