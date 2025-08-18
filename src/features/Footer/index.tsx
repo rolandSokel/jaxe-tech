@@ -2,29 +2,10 @@
 
 import type React from "react"
 import { useState } from "react"
-import { MapPin, Phone, Mail, Send, ArrowRight } from "lucide-react"
 import Form from "./Form"
 import Contact from "./Contact"
 
 export default function Footer() {
-    const [formData, setFormData] = useState({
-        nom: "",
-        email: "",
-        message: "",
-    })
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        console.log("Form submitted:", formData)
-        // Handle form submission here
-    }
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        })
-    }
 
     return (
         <section id="contact" className="relative scroll-mt-[30px] text-white overflow-hidden">

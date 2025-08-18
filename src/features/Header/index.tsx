@@ -15,7 +15,6 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    // 👇 Appel immédiat au montage
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
@@ -39,7 +38,7 @@ export default function Header() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             let id = entry.target.id;
-            if (id === "hero") id = ""; // hero correspond aussi à "/"
+            if (id === "hero") id = "";
             setActiveSection(id);
           }
         });

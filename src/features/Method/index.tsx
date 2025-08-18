@@ -33,10 +33,6 @@ export default function Method() {
             sur mesure, alliant innovation, performance et simplicité d’utilisation,
             afin de garantir des résultats concrets et durables.
           </p>
-
-          {/* <button className="mt-4 px-8 py-3 bg-gradient-to-r from-actif to-orange-500 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-actif/25 transition-all duration-300 transform hover:scale-105">
-            Découvrir nos services
-          </button> */}
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

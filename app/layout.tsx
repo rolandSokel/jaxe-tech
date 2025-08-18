@@ -39,7 +39,6 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        {/* Footer can be added here if needed */}
         <Footer />
       </body>
     </html>
