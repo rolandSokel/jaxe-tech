@@ -3,9 +3,9 @@ export default function Hero() {
     <main className="relative flex min-h-screen w-full bg-center bg-no-repeat bg-cover bg-[url(/images/hero/hero-bg-cover.png)] flex-col gap-8 items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-transparent"></div>
 
-      <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-to-br from-red-500/15 to-orange-500/15 rounded-full blur-2xl animate-pulse delay-1000"></div>
-      <div className="absolute top-1/3 right-20 w-16 h-16 bg-gradient-to-br from-orange-400/25 to-red-400/25 rounded-full blur-lg animate-pulse delay-500"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-full blur-xl animate-pulse"/>
+      <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-to-br from-red-500/15 to-orange-500/15 rounded-full blur-2xl animate-pulse delay-1000"/>
+      <div className="absolute top-1/3 right-20 w-16 h-16 bg-gradient-to-br from-orange-400/25 to-red-400/25 rounded-full blur-lg animate-pulse delay-500"/>
 
       <div className="relative z-10 max-w-6xl w-full flex px-8 md:px-20 flex-col gap-8 items-center justify-center">
         <div className="text-center space-y-4">
