@@ -2,6 +2,7 @@
 
 :root {
   --background: #ffffff;
+  --actif: "#FF5029";
   --foreground: #171717;
 }
 
@@ -9,18 +10,78 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --color-actif: var(--actif);
   --font-mono: var(--font-geist-mono);
+  --font-clashdisplay: 'ClashDisplay';
+  --font-DM_Sans: 'DM_Sans';
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1A1B1D;
     --foreground: #ededed;
+    --actif: #FF5029;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'DM_Sans', sans-serif;
+}
+
+/* ---------- ClashDisplay --------------- */
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-SemiBold.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Bold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ---------- DM_Sans --------------- */
+
+@font-face {
+  font-family: 'DM_Sans';
+  src: url('/fonts/DM_Sans/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM_Sans';
+  src: url('/fonts/DM_Sans/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM_Sans';
+  src: url('/fonts/DM_Sans/DMSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM_Sans';
+  src: url('/fonts/DM_Sans/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
